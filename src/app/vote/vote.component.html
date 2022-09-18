@@ -1,0 +1,7 @@
+<div class="content-container">
+    <h3 class="content-title">უნდა მოხდეს თუ არა სამყაროს კოლონიზაცია?</h3>
+    <p>agreed: {{agree}} </p>
+    <p>disAgreed: {{disAgree}} </p>
+  </div>
+
+<app-voter-child *ngFor="let voter of voters" [voter] ="voter"(voted)="onVoted($event)"></app-voter-child>  
